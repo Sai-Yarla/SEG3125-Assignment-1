@@ -1,0 +1,52 @@
+/* Base styles and typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Color Palette (Example: Teal as primary color)
+   Update this part in your report to explain why you chose these colors! */
+:root {
+    --bs-primary: #008080;
+    --bs-primary-rgb: 0, 128, 128;
+}
+
+/* Primary Button Overrides */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #006666;
+    border-color: #006666;
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+/* Text Overrides */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+/* Card hover interactions (Contrast & Hierarchy principles) */
+.transition-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
