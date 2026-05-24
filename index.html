@@ -6,39 +6,43 @@
     <title>My Portfolio</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!-- Custom CSS (Handles Fonts & Newsprint Theme) -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent border-bottom border-dark border-3 py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">
+                <span class="fs-6 d-block text-muted font-mono tracking-widest" style="letter-spacing: 0.2em;">Vol. 1.0</span>
+                My Portfolio
+            </a>
+            <button class="navbar-toggler rounded-0 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-i-work">How I Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                <ul class="navbar-nav ms-auto font-sans text-uppercase fs-6 fw-bold" style="letter-spacing: 0.1em;">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#about">About Me</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link text-dark" href="#how-i-work">How I Work</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link text-dark" href="#case-studies">Case Studies</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- About You Section -->
-    <section id="about" class="py-5 bg-light text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-4">About Me</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
+    <section id="about" class="py-5">
+        <div class="container border border-dark p-4 p-md-5 bg-white position-relative mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center news-col-divider">
                     <!-- Profile Picture -->
-                    <img src="profile_img.JPG" alt="My Photo" class="rounded-circle mb-3 border border-3 border-primary shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
-                    <p class="lead">
-                        Hello! I'm <strong>Sai Yarlagadda</strong>, a Computer Science student at the University of Ottawa. Outside of my studies, I've gained valuable professional experience as a co-op student at CIBC the past few summers. My passion lies at the intersection of logical problem-solving and creative design. When I'm not coding or designing, you can usually find me heavily invested in hockey, or obsessively updating my Letterboxd with my latest movie reviews.
+                    <img src="profile_img.JPG" alt="My Photo" class="grayscale img-fluid border border-dark mb-3" style="max-height: 300px; object-fit: cover;">
+                </div>
+                <div class="col-md-7 ps-md-5 pt-4 pt-md-0">
+                    <p class="font-mono text-uppercase fw-bold mb-2" style="letter-spacing: 0.1em; font-size: 0.8rem;">Feature Story</p>
+                    <h1 class="display-3 fw-bold mb-4 text-uppercase">About Me</h1>
+                    <p class="fs-5 lh-lg" style="text-align: justify;">
+                        <span class="float-start fs-1 fw-bold pe-2 lh-1" style="font-size: 4rem !important;">H</span>ello! I'm <strong>Sai Yarlagadda</strong>, a Computer Science student at the University of Ottawa. Outside of my studies, I've gained valuable professional experience as a co-op student at CIBC the past few summers. My passion lies at the intersection of logical problem-solving and creative design. When I'm not coding or designing, you can usually find me heavily invested in hockey, or obsessively updating my Letterboxd with my latest movie reviews.
                     </p>
                 </div>
             </div>
@@ -46,18 +50,25 @@
     </section>
 
     <!-- How You Work Section -->
-    <section id="how-i-work" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold">How I Work</h2>
+    <section id="how-i-work" class="py-5 my-5 newsprint-texture bg-transparent">
+        <div class="container px-4 py-5">
+            <h2 class="text-center mb-5 display-5 fw-bold text-uppercase border-bottom border-dark pb-4">How I Work</h2>
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    <div class="p-4 border rounded shadow-sm bg-white">
-                        <p class="fs-5 text-center mb-4">
-                            I am currently learning UI/UX design elements and visual communication concepts as part of my coursework. 
-                        </p>
-                        <p class="text-center">
-                            Therefore, I am still building my foundational skills in visual communication and UI/UX patterns. By drawing inspiration from established industry leaders like the <a href="https://www.nngroup.com/" target="_blank" class="text-decoration-none fw-bold text-primary">Nielsen Norman Group (NN/g)</a>, I strive to place user needs at the center of every architectural decision. As I progress through my coursework, I plan to expand my toolkit further and continue updating my process.
-                        </p>
+                    <p class="fs-4 text-center mb-4 font-serif fst-italic">
+                        "I'm still pretty new to the world of UI/UX design, but I'm having a lot of fun learning the core elements and visual communication concepts in my university classes."
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-6 news-col-divider pe-md-4">
+                            <p class="lh-lg" style="text-align: justify;">
+                                Following advice from resources like the <a href="https://ixdf.org/literature/article/what-should-a-ux-design-portfolio-contain" target="_blank" class="text-dark fw-bold" style="text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--newsprint-accent);">Interaction Design Foundation</a>, I understand that showing <em>how</em> you work is just as important as <em>what</em> you make. Since my workflow is still taking shape, my current approach is all about soaking up knowledge.
+                            </p>
+                        </div>
+                        <div class="col-md-6 ps-md-4">
+                            <p class="lh-lg" style="text-align: justify;">
+                                Reading up on usability guidelines from leaders like the <a href="https://www.nngroup.com/" target="_blank" class="text-dark fw-bold" style="text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--newsprint-accent);">Nielsen Norman Group (NN/g)</a>, I'm gathering feedback, and constantly tweaking my designs. As I progress, I’m excited to expand my toolkit, dive into real user testing, and get hands-on with prototyping.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,51 +76,58 @@
     </section>
 
     <!-- 4 Case Studies Section -->
-    <section id="case-studies" class="py-5 bg-light">
+    <section id="case-studies" class="py-5 mb-5">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold">Case Studies</h2>
+            <div class="d-flex justify-content-between align-items-end border-bottom border-dark border-3 pb-3 mb-5">
+                <h2 class="mb-0 display-5 fw-bold text-uppercase">Case Studies</h2>
+                <span class="font-mono text-uppercase d-none d-md-block" style="letter-spacing: 0.1em; font-size: 0.8rem;">4 Projects Required</span>
+            </div>
             <div class="row g-4">
                 <!-- Design 1 -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm transition-hover">
-                        <img src="https://via.placeholder.com/300x200?text=Service+Site" class="card-img-top" alt="Service Site">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Design 1: Service Site</h5>
-                            <p class="card-text text-muted">A service-oriented website (e.g., dentist, bike repair, hairdresser).</p>
-                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto stretched-link">View Case Study</a>
+                    <div class="card h-100 transition-hover border-dark">
+                        <img src="https://via.placeholder.com/300x200?text=Service+Site" class="card-img-top border-bottom border-dark grayscale" alt="Service Site">
+                        <div class="card-body d-flex flex-column bg-white">
+                            <p class="font-mono text-uppercase fw-bold mb-2 text-muted" style="letter-spacing: 0.1em; font-size: 0.7rem;">Design 01</p>
+                            <h5 class="card-title fw-bold font-serif fs-4 mb-3">Service Site</h5>
+                            <p class="card-text text-dark">A service-oriented website (e.g., dentist, bike repair, hairdresser).</p>
+                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto">View Case Study</a>
                         </div>
                     </div>
                 </div>
                 <!-- Design 2 -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm transition-hover">
-                        <img src="https://via.placeholder.com/300x200?text=Jeu+de+Memoire" class="card-img-top" alt="Memory Game">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Design 2: Un jeu de mémoire</h5>
-                            <p class="card-text text-muted">A memory card game with an interactive user interface.</p>
-                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto stretched-link">View Case Study</a>
+                    <div class="card h-100 transition-hover border-dark">
+                        <img src="https://via.placeholder.com/300x200?text=Jeu+de+Memoire" class="card-img-top border-bottom border-dark grayscale" alt="Memory Game">
+                        <div class="card-body d-flex flex-column bg-white">
+                            <p class="font-mono text-uppercase fw-bold mb-2 text-muted" style="letter-spacing: 0.1em; font-size: 0.7rem;">Design 02</p>
+                            <h5 class="card-title fw-bold font-serif fs-4 mb-3">Un jeu de mémoire</h5>
+                            <p class="card-text text-dark">A memory card game with an interactive user interface.</p>
+                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto">View Case Study</a>
                         </div>
                     </div>
                 </div>
                 <!-- Design 3 -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm transition-hover">
-                        <img src="https://via.placeholder.com/300x200?text=E-commerce" class="card-img-top" alt="E-commerce Site">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Design 3: E-commerce Site</h5>
-                            <p class="card-text text-muted">An online store interface designed for a seamless shopping experience.</p>
-                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto stretched-link">View Case Study</a>
+                    <div class="card h-100 transition-hover border-dark">
+                        <img src="https://via.placeholder.com/300x200?text=E-commerce" class="card-img-top border-bottom border-dark grayscale" alt="E-commerce Site">
+                        <div class="card-body d-flex flex-column bg-white">
+                            <p class="font-mono text-uppercase fw-bold mb-2 text-muted" style="letter-spacing: 0.1em; font-size: 0.7rem;">Design 03</p>
+                            <h5 class="card-title fw-bold font-serif fs-4 mb-3">E-commerce Site</h5>
+                            <p class="card-text text-dark">An online store interface designed for a seamless shopping experience.</p>
+                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto">View Case Study</a>
                         </div>
                     </div>
                 </div>
                 <!-- Design 4 -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm transition-hover">
-                        <img src="https://via.placeholder.com/300x200?text=Analytics" class="card-img-top" alt="Analytics Site">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Design 4: Analytics Site</h5>
-                            <p class="card-text text-muted">An analytics dashboard featuring data visualizations and insights.</p>
-                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto stretched-link">View Case Study</a>
+                    <div class="card h-100 transition-hover border-dark">
+                        <img src="https://via.placeholder.com/300x200?text=Analytics" class="card-img-top border-bottom border-dark grayscale" alt="Analytics Site">
+                        <div class="card-body d-flex flex-column bg-white">
+                            <p class="font-mono text-uppercase fw-bold mb-2 text-muted" style="letter-spacing: 0.1em; font-size: 0.7rem;">Design 04</p>
+                            <h5 class="card-title fw-bold font-serif fs-4 mb-3">Analytics Site</h5>
+                            <p class="card-text text-dark">An analytics dashboard featuring data visualizations and insights.</p>
+                            <a href="coming-soon.html" class="btn btn-outline-primary mt-auto">View Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -118,9 +136,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 [Your Name] | Portfolio</p>
+    <footer class="bg-black text-white text-center py-5 border-top border-dark border-3">
+        <div class="container font-mono text-uppercase" style="letter-spacing: 0.1em;">
+            <p class="mb-2">&copy; 2026 Sai Yarlagadda | Portfolio</p>
+            <p class="mb-0 text-muted" style="font-size: 0.8rem;">Printed in Ottawa, ON</p>
         </div>
     </footer>
 
